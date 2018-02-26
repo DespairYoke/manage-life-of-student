@@ -1,0 +1,4 @@
+*.yml
+target
+*.properties
+messageSend/**/Config.java
