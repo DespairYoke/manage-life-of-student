@@ -62,3 +62,15 @@ http:localhost:8080/api/index/findUserInfo
     {
         "id":92
     }
+### 查看全部好友
+http:localhost:8080/api/index/findAllUser
+
+    {
+        无
+    }
+### 通过具体id查找
+http:localhost:8080/api/index/findUserInfo
+
+    {
+        id:
+    }
