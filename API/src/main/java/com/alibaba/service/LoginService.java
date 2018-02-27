@@ -15,4 +15,8 @@ public interface LoginService {
     int updateUser(User user);
 
     List<User> selectUserBynumber(String number);
+
+    User selectById(User user);
+
+    List<User> findAllUser();
 }

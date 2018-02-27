@@ -1,4 +1,4 @@
-*.yml
+#*.yml
 target
-*.properties
-messageSend/**/Config.java
+#*.properties
+#messageSend/**/Config.java

@@ -1,6 +1,7 @@
 package com.alibaba.serviceImpl;
 
 import com.alibaba.domain.User;
+import com.alibaba.domain.UserExample;
 import com.alibaba.mapper.UserMapper;
 import com.alibaba.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,16 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public List<User> selectUserBynumber(String number) {
         return userMapper.selectUserBynumber(number);
+    }
+
+    @Override
+    public User selectById(User user) {
+
+        return userMapper.selectById(user);
+    }
+
+    @Override
+    public List<User> findAllUser() {
+        return userMapper.selectAllUser();
     }
 }

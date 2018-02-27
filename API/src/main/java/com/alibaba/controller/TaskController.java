@@ -60,14 +60,11 @@ public class TaskController {
 
     @RequestMapping(value = "/deleteTodayTask")
     public String deleteTodayTask(@RequestBody Task task){
-
         if (todayTaskService.deleteTodayTask(task.getId())!=0)
         {
-
             respInfo.setMesssage("删除成功！");
             respInfo.setStatus(InfoCode.SUCCESS);
             return JSON.toJSONString(respInfo);
-
         }
 
         respInfo.setMesssage("id不存在！");
@@ -77,7 +74,6 @@ public class TaskController {
 
     @RequestMapping(value = "/finishTodayTask")
     public String finishTask(@RequestBody Task task){
-
         if (todayTaskService.finishTask(task.getId())!=0)
         {
             List<Task> taskList=todayTaskService.queryTodayTask(task.getUserid());
@@ -89,15 +85,12 @@ public class TaskController {
                 {
                     sum+= (int)object.getType();
                 }
-
                     weekService.updateWeek(task,sum/count);
-
             }
             respInfo.setMesssage("完成成功！");
             respInfo.setStatus(InfoCode.SUCCESS);
             return JSON.toJSONString(respInfo);
         }
-
         respInfo.setMesssage("id不存在！");
         respInfo.setStatus(InfoCode.FAIL);
         return JSON.toJSONString(respInfo);

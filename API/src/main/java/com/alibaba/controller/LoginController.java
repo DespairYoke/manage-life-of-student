@@ -15,6 +15,7 @@ import sun.misc.BASE64Encoder;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 
 /**
  * @author zwd
@@ -67,6 +68,30 @@ public class LoginController {
         respInfo.setMesssage("此联系人不存在");
         respInfo.setStatus(InfoCode.FAIL);
         return JSON.toJSONString(respInfo);
+    }
+    @RequestMapping(value = "/findUserInfo")
+    public String lookUserInfo(@RequestBody User user) {
+        User user1=loginService.selectById(user);
+        respInfo.setContent(user1);
+        respInfo.setStatus(InfoCode.SUCCESS);
+        respInfo.setMesssage("查询成功");
+        return JSON.toJSONString(respInfo);
+    }
 
+    @RequestMapping(value = "/findAllUser")
+    public String findAllUser() {
+        List<User> list = loginService.findAllUser();
+        if (list.isEmpty())
+        {
+            respInfo.setStatus(InfoCode.FAIL);
+            respInfo.setMesssage("没有数据存在");
+        }
+        else {
+            respInfo.setContent(list);
+            respInfo.setStatus(InfoCode.SUCCESS);
+            respInfo.setMesssage("查询成功");
+
+        }
+        return JSON.toJSONString(respInfo);
     }
     }

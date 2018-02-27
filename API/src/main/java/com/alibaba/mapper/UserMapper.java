@@ -17,4 +17,8 @@ public interface UserMapper {
     List<User> selectEmail();
 
     List<User> selectUserBynumber(String number);
+
+    User selectById(User user);
+
+    List<User> selectAllUser();
 }

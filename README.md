@@ -57,3 +57,8 @@ http:localhost:8080/api/index/updateUser
         number: 92
         type: 1//0表示不开启1表示开启
     }
+### 查看账户信息
+http:localhost:8080/api/index/findUserInfo
+    {
+        "id":92
+    }
