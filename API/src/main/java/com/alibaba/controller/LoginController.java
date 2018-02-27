@@ -5,9 +5,7 @@ import com.alibaba.Util.RespInfo;
 import com.alibaba.domain.User;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.service.LoginService;
-import com.mysql.jdbc.util.Base64Decoder;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,7 +30,6 @@ public class LoginController {
     @RequestMapping(value = "/login")
     public String login(@RequestBody User user) {
         try {
-            //BCryptPasswordEncoder encoder =new BCryptPasswordEncoder();
             MessageDigest sha = MessageDigest.getInstance("MD5");
             BASE64Encoder base64Encoder =new BASE64Encoder();
             String password = base64Encoder.encode(sha.digest(user.getPassword().getBytes()));

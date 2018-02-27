@@ -31,7 +31,7 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="user" domainObjectName="User"
+        <table tableName="confession_wall" domainObjectName="ConfessionWall"
                enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
@@ -39,25 +39,6 @@
                selectByExampleQueryId="true"
         >
             <property name="useActualColumnNames" value="true"/>
-        </table>
-        <table tableName="task" domainObjectName="Task"
-               enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               selectByExampleQueryId="true"
-        >
-            <property name="useActualColumnNames" value="true"/>
-        </table>
-
-        <table tableName="user_task" domainObjectName="UserTask"
-               enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               selectByExampleQueryId="true"
-        >
-        <property name="useActualColumnNames" value="true"/>
         </table>
     </context>
 </generatorConfiguration>
