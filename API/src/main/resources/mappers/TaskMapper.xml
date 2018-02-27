@@ -68,6 +68,7 @@
   <sql id="Base_Column_List">
     id, content, userid, type
   </sql>
+
   <select id="selectByExample" parameterType="com.alibaba.domain.TaskExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -149,7 +150,7 @@
         userid = #{record.userid,jdbcType=INTEGER},
       </if>
       <if test="record.type != null">
-        type = #{record.type,jdbcType=TINYINT},
+        type = #{record.type,jdbcType=BINARY},
       </if>
     </set>
     <if test="_parameter != null">
@@ -161,7 +162,7 @@
     set id = #{record.id,jdbcType=INTEGER},
       content = #{record.content,jdbcType=VARCHAR},
       userid = #{record.userid,jdbcType=INTEGER},
-      type = #{record.type,jdbcType=TINYINT}
+      type = #{record.type,jdbcType=BINARY}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -185,7 +186,7 @@
         userid = #{userid,jdbcType=INTEGER},
       </if>
       <if test="type != null">
-        type = #{type,jdbcType=TINYINT},
+        type = #{type,jdbcType=BINARY},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -194,7 +195,7 @@
     update task
     set content = #{content,jdbcType=VARCHAR},
       userid = #{userid,jdbcType=INTEGER},
-      type = #{type,jdbcType=TINYINT}
+      type = #{type,jdbcType=BINARY}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.alibaba.domain.Task">
@@ -203,6 +204,7 @@
       userid = #{userid,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
   <select id="queryTodayTask" parameterType="java.lang.Integer" resultType="com.alibaba.domain.Task">
     select
     <include refid="Base_Column_List"/>

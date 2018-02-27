@@ -10,7 +10,6 @@
     <modules>
         <module>API</module>
         <module>spring-boot-mail</module>
-        <module>messageSend</module>
     </modules>
     <packaging>pom</packaging>
 </project>

@@ -281,7 +281,7 @@
     SELECT 
     <include refid="Base_Column_List"/>
     FROM USER
-    WHERE id=#{id,jdbcType=Integer}
+    WHERE id=#{id,jdbcType=INTEGER}
   </select>
   <select id="selectAllUser" resultType="com.alibaba.domain.User">
     SELECT

@@ -21,15 +21,14 @@ import java.util.List;
  */
 @Component
 public class ScheduleTask {
+    @Autowired
+    private UserMapper userMapper;
 
     @Autowired
     private TaskMapper taskMapper;
 
     @Autowired
     private UserTaskMapper userTaskMapper;
-
-    @Autowired
-    private UserMapper userMapper;
 
     @Scheduled(cron ="0 0 00 ? * SUN")
     public void process(){

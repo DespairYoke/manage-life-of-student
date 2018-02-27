@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @date 2018/1/13 15:31
  */
 @SpringBootApplication(scanBasePackages = {"com.alibaba"})
-@MapperScan("com.alibaba.mapper")
+@MapperScan(basePackages = {"com.alibaba.mapper"})
 @EnableScheduling
 @Import(value = {com.neo.Application.class})
 public class App {
