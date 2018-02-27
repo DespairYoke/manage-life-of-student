@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb6b7176-09cd-4202-9cea-4045ed674684" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/messageSend/messageSend.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/messageSend/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/messageSend/src/main/java/cc/huluwa/config/Config.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/messageSend/src/main/java/cc/huluwa/util/MessageSend.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/messageSend/src/main/java/cc/huluwa/util/UserSendUtil.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/API/target/" />
@@ -24,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/API/src/main/java/com/alibaba/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1206">
-              <caret line="82" column="53" lean-forward="true" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+              <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -34,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -77,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/API/src/main/resources/mappers/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
-              <caret line="289" column="9" lean-forward="true" selection-start-line="289" selection-start-column="9" selection-end-line="289" selection-end-column="9" />
+              <caret line="289" column="9" lean-forward="false" selection-start-line="289" selection-start-column="9" selection-end-line="289" selection-end-column="9" />
               <folding>
                 <marker date="1519716359000" expanded="true" signature="9518:9678" ph="SELECT FROM user" />
                 <marker date="1519716359000" expanded="true" signature="9953:10398" ph="update user... " />
@@ -94,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/API/src/main/resources/mappers/TaskMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <marker date="1519715527000" expanded="true" signature="3402:3456" ph="delete from task... " />
                 <marker date="1519715527000" expanded="true" signature="3552:3568" ph="delete from task... " />
@@ -118,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/API/src/main/resources/mappers/UserTaskMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="474">
-              <caret line="267" column="44" lean-forward="true" selection-start-line="267" selection-start-column="44" selection-end-line="267" selection-end-column="44" />
+              <caret line="267" column="44" lean-forward="false" selection-start-line="267" selection-start-column="44" selection-end-line="267" selection-end-column="44" />
               <folding>
                 <marker date="1519715527000" expanded="true" signature="3847:3952" ph="select from user_task" />
                 <marker date="1519715527000" expanded="true" signature="4038:4097" ph="delete from user_task... " />
@@ -136,8 +140,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="72">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -147,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/API/src/main/java/com/alibaba/mapper/TaskMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -376,51 +380,6 @@
             <path>
               <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
               <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
-              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -714,7 +673,7 @@
       <workItem from="1519615707277" duration="10105000" />
       <workItem from="1519692709431" duration="5563000" />
       <workItem from="1519701641762" duration="4109000" />
-      <workItem from="1519713398079" duration="3523000" />
+      <workItem from="1519713398079" duration="3581000" />
     </task>
     <servers />
   </component>
@@ -748,7 +707,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78426000" />
+    <option name="totallyTimeSpent" value="78484000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,7 +720,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1231" y="103" width="2111" height="1337" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -784,7 +742,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38392124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1817303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1817303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1148,7 +1106,7 @@
     <entry file="file://$PROJECT_DIR$/API/src/main/java/com/alibaba/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1206">
-          <caret line="82" column="53" lean-forward="true" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+          <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1164,7 +1122,7 @@
     <entry file="file://$PROJECT_DIR$/API/src/main/java/com/alibaba/mapper/TaskMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1172,7 +1130,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1199,7 +1157,7 @@
     <entry file="file://$PROJECT_DIR$/API/src/main/resources/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="289" column="9" lean-forward="true" selection-start-line="289" selection-start-column="9" selection-end-line="289" selection-end-column="9" />
+          <caret line="289" column="9" lean-forward="false" selection-start-line="289" selection-start-column="9" selection-end-line="289" selection-end-column="9" />
           <folding>
             <marker date="1519716359000" expanded="true" signature="9518:9678" ph="SELECT FROM user" />
             <marker date="1519716359000" expanded="true" signature="9953:10398" ph="update user... " />
@@ -1214,7 +1172,7 @@
     <entry file="file://$PROJECT_DIR$/API/src/main/resources/mappers/TaskMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding>
             <marker date="1519715527000" expanded="true" signature="3402:3456" ph="delete from task... " />
             <marker date="1519715527000" expanded="true" signature="3552:3568" ph="delete from task... " />
@@ -1236,7 +1194,7 @@
     <entry file="file://$PROJECT_DIR$/API/src/main/resources/mappers/UserTaskMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
-          <caret line="267" column="44" lean-forward="true" selection-start-line="267" selection-start-column="44" selection-end-line="267" selection-end-column="44" />
+          <caret line="267" column="44" lean-forward="false" selection-start-line="267" selection-start-column="44" selection-end-line="267" selection-end-column="44" />
           <folding>
             <marker date="1519715527000" expanded="true" signature="3847:3952" ph="select from user_task" />
             <marker date="1519715527000" expanded="true" signature="4038:4097" ph="delete from user_task... " />
@@ -1252,8 +1210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="72">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
