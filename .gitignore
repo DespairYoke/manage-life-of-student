@@ -2,4 +2,4 @@ target
 messageSend
 #*.yml
 #*.properties
-#messageSend/**/Config.java
+messageSend/**/Config.java

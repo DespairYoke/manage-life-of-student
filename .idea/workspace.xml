@@ -136,8 +136,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="36">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -376,6 +376,51 @@
             <path>
               <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
               <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manage-life-of-student" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manage-life-of-student" type="462c0819:PsiDirectoryNode" />
+              <item name="messageSend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -669,7 +714,7 @@
       <workItem from="1519615707277" duration="10105000" />
       <workItem from="1519692709431" duration="5563000" />
       <workItem from="1519701641762" duration="4109000" />
-      <workItem from="1519713398079" duration="3434000" />
+      <workItem from="1519713398079" duration="3523000" />
     </task>
     <servers />
   </component>
@@ -703,7 +748,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78337000" />
+    <option name="totallyTimeSpent" value="78426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1207,8 +1252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
