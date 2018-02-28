@@ -3,6 +3,7 @@ package com.alibaba.controller;
 import com.alibaba.Util.InfoCode;
 import com.alibaba.Util.RespInfo;
 import com.alibaba.domain.ConfessionWall;
+import com.alibaba.domain.User;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.service.ConfessionWallService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,4 +30,8 @@ public class ConfessionWallController {
         respInfo.setContent(confessionWall);
         return JSON.toJSONString(respInfo);
     }
+   /* @RequestMapping(value = "/")
+    public String findAllContent(@RequestBody User user) {
+
+    }*/
 }

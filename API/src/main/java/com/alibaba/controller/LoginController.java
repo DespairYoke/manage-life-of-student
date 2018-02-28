@@ -1,19 +1,25 @@
 package com.alibaba.controller;
 
 import com.alibaba.Util.InfoCode;
+import com.alibaba.Util.ParseWeek;
 import com.alibaba.Util.RespInfo;
+import com.alibaba.domain.Task;
 import com.alibaba.domain.User;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.service.LoginService;
+import com.alibaba.service.TodayTaskService;
+import com.alibaba.service.UserTaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import sun.misc.BASE64Encoder;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author zwd
@@ -25,6 +31,8 @@ public class LoginController {
 
     @Autowired
     private LoginService loginService;
+    @Autowired
+    private UserTaskService userTaskService;
     @Autowired
     private RespInfo respInfo;
     @RequestMapping(value = "/login")
@@ -77,18 +85,12 @@ public class LoginController {
 
     @RequestMapping(value = "/findAllUser")
     public String findAllUser() {
-        List<User> list = loginService.findAllUser();
-        if (list.isEmpty())
-        {
-            respInfo.setStatus(InfoCode.FAIL);
-            respInfo.setMesssage("没有数据存在");
-        }
-        else {
-            respInfo.setContent(list);
-            respInfo.setStatus(InfoCode.SUCCESS);
-            respInfo.setMesssage("查询成功");
-
-        }
-        return JSON.toJSONString(respInfo);
+        String day= ParseWeek.ParseDayofWeek();
+        List<Map> list=userTaskService.selectByDay(day);
+        RespInfo respInfo = new RespInfo();
+        respInfo.setContent(list);
+        respInfo.setStatus(InfoCode.SUCCESS);
+        respInfo.setMesssage("查询成功");
+        return JSON.toJSONString(respInfo);//JSON.toJSONString(respInfo);
     }
     }

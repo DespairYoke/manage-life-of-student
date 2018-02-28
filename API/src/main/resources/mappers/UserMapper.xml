@@ -280,12 +280,12 @@
   <select id="selectById" resultType="com.alibaba.domain.User">
     SELECT 
     <include refid="Base_Column_List"/>
-    FROM USER
+    FROM user
     WHERE id=#{id,jdbcType=INTEGER}
   </select>
   <select id="selectAllUser" resultType="com.alibaba.domain.User">
     SELECT
     <include refid="Base_Column_List"/>
-    FROM USER
+    FROM user
 </select>
 </mapper>

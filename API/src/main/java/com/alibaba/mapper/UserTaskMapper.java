@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface UserTaskMapper {
@@ -30,4 +31,6 @@ public interface UserTaskMapper {
     int updateByPrimaryKeySelective(UserTask record);
 
     int updateByPrimaryKey(UserTask record);
+
+    List<Map> selectByDay(@Param("day") String day);
 }

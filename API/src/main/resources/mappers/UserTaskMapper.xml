@@ -273,4 +273,8 @@
       sonday = #{sonday,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="selectByDay" resultType="java.util.HashMap">
+    select user_id,${day}
+    from user_task
+  </select>
 </mapper>
