@@ -1,11 +1,14 @@
 package com.alibaba.serviceImpl;
 
 import com.alibaba.domain.ConfessionWall;
+import com.alibaba.domain.ConfessionWallExample;
 import com.alibaba.mapper.ConfessionWallMapper;
 import com.alibaba.service.ConfessionWallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * @author zwd
@@ -22,5 +25,11 @@ public class ConfessionWallServiceImpl implements ConfessionWallService {
     @Override
     public void insertSelective(ConfessionWall confessionWall) {
         confessionWallMapper.insertSelective(confessionWall);
+    }
+
+    @Override
+    public List<ConfessionWall> findAllWall() {
+        ConfessionWallExample confessionWallExample = new ConfessionWallExample();
+        return confessionWallMapper.selectByExample(confessionWallExample);
     }
 }

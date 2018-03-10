@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/API/API.iml" filepath="$PROJECT_DIR$/API/API.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/manage-life-of-student.iml" filepath="$PROJECT_DIR$/.idea/manage-life-of-student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/messageSend/messageSend.iml" filepath="$PROJECT_DIR$/messageSend/messageSend.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" filepath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" />
     </modules>
   </component>

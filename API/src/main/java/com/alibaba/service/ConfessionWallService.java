@@ -1,8 +1,8 @@
 package com.alibaba.service;
 
 import com.alibaba.domain.ConfessionWall;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * @author zwd
@@ -11,4 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 public interface ConfessionWallService {
     void insertSelective(ConfessionWall confessionWall);
+
+    List<ConfessionWall> findAllWall();
 }

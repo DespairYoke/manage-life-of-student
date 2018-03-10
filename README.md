@@ -85,3 +85,55 @@ http:localhost:8080/api/index/findUserInfo
     {
         id:
     }
+    
+### 添加动态内容 
+http:localhost:8080/api/wall/add
+    
+    {
+        userid:
+        content:
+    }
+###  查找动态内容   
+http:localhost:8080/api/wall/findAllWall
+
+    {
+        //无
+    }
+### 生成短信验证码    
+localhost:8080/api/user/generCode
+
+    {
+        "phone":
+    }
+    
+### 更新/绑定手机号
+localhost:8080/api/user/updatephone
+
+    {
+        "id":,
+        "phone":,
+        "code":
+    }
+    
+### 图片上传
+localhost:8080/api/upload/image
+
+    {
+        "file":
+        id:""
+    }
+    
+### 文件上传
+localhost:8080/api/upload/file
+
+    {
+        "file":
+        id:""
+    }
+   
+#### 文件目录
+localhost:8080/api/upload/findfile
+
+    {
+        "id":
+    }

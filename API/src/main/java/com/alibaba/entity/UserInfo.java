@@ -8,9 +8,15 @@ import com.alibaba.domain.User;
  */
 public class UserInfo
 {
+    private String number;
+
     private User user;
 
     private double count;
+
+    private String code;
+
+    private String phone;
 
     public User getUser() {
         return user;
@@ -28,4 +34,27 @@ public class UserInfo
         this.count = count;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }

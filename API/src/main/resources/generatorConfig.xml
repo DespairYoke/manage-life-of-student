@@ -26,12 +26,12 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.alibaba.mapper"
-                             targetProject="src/main/java" type="XMLMAPPER" >
-            <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+        <!--<javaClientGenerator targetPackage="com.alibaba.mapper"-->
+                             <!--targetProject="src/main/java" type="XMLMAPPER" >-->
+            <!--<property name="enableSubPackages" value="true"/>-->
+        <!--</javaClientGenerator>-->
 
-        <table tableName="confession_wall" domainObjectName="ConfessionWall"
+        <table tableName="file" domainObjectName="FileUpLoad"
                enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
