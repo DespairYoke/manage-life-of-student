@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb6b7176-09cd-4202-9cea-4045ed674684" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/manage-life-of-student.iml" afterPath="$PROJECT_DIR$/.idea/manage-life-of-student.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/API/API.iml" afterPath="$PROJECT_DIR$/API/API.iml" />
-      <change beforePath="$PROJECT_DIR$/API/pom.xml" afterPath="$PROJECT_DIR$/API/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/API/src/main/java/com/alibaba/App.java" afterPath="$PROJECT_DIR$/API2/src/main/java/com/alidata/App.java" />
-      <change beforePath="$PROJECT_DIR$/API/src/main/java/com/alibaba/Util/ScheduleTask.java" afterPath="$PROJECT_DIR$/API/src/main/java/com/alibaba/Util/ScheduleTask.java" />
-      <change beforePath="$PROJECT_DIR$/API/src/main/java/com/alibaba/controller/UploadImgController.java" afterPath="$PROJECT_DIR$/API/src/main/java/com/alibaba/controller/UploadImgController.java" />
-      <change beforePath="$PROJECT_DIR$/API/src/test/java/com/alibaba/Test1.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/API/src/test/java/com/alibaba/mpp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/messageSend/messageSend.iml" afterPath="$PROJECT_DIR$/messageSend/messageSend.iml" />
-      <change beforePath="$PROJECT_DIR$/messageSend/pom.xml" afterPath="$PROJECT_DIR$/messageSend/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mail/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-mail/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" afterPath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mail/src/main/java/com/neo/Application.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mail/src/main/java/com/neo/impl/MailServiceImpl.java" afterPath="$PROJECT_DIR$/spring-boot-mail/src/main/java/com/alidata/impl/MailServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mail/src/main/java/com/neo/service/MailService.java" afterPath="$PROJECT_DIR$/spring-boot-mail/src/main/java/com/alidata/service/MailService.java" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mail/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/API/src/main/resources/application.properties" />
-    </list>
+    <list default="true" id="fb6b7176-09cd-4202-9cea-4045ed674684" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/API/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-mail/target/" />
@@ -157,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -292,8 +243,8 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="199" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="421" />
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1337" />
@@ -869,7 +820,7 @@
       <workItem from="1520670316798" duration="186000" />
       <workItem from="1520670513404" duration="485000" />
       <workItem from="1520813734076" duration="17340000" />
-      <workItem from="1520903591716" duration="11738000" />
+      <workItem from="1520903591716" duration="12055000" />
     </task>
     <servers />
   </component>
@@ -906,7 +857,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190396000" />
+    <option name="totallyTimeSpent" value="190713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -918,7 +869,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="199" y="23" width="2560" height="1337" extended-state="0" />
+    <frame x="421" y="23" width="2560" height="1337" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1424,7 +1375,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
