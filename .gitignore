@@ -1,5 +1,5 @@
 target
 ###messageSend
-#*.yml
-#*.properties
-#messageSend/**/Config.java
+*.yml
+*.properties
+messageSend/**/Config.java

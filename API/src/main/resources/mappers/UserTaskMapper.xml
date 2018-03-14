@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.alibaba.mapper.UserTaskMapper">
-  <resultMap id="BaseResultMap" type="com.alibaba.domain.UserTask">
+<mapper namespace="com.suyu.api.mapper.UserTaskMapper">
+  <resultMap id="BaseResultMap" type="com.suyu.api.domain.UserTask">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="user_id" jdbcType="INTEGER" property="user_id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="monday" jdbcType="DOUBLE" property="monday" />
     <result column="tuesday" jdbcType="DOUBLE" property="tuesday" />
     <result column="wednesday" jdbcType="DOUBLE" property="wednesday" />
@@ -73,7 +73,7 @@
   <sql id="Base_Column_List">
     id, user_id, monday, tuesday, wednesday, toursday, friday, saturday, sonday
   </sql>
-  <select id="selectByExample" parameterType="com.alibaba.domain.UserTaskExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.suyu.api.domain.UserTaskExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -98,29 +98,29 @@
     delete from user_task
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.alibaba.domain.UserTaskExample">
+  <delete id="deleteByExample" parameterType="com.suyu.api.domain.UserTaskExample">
     delete from user_task
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.alibaba.domain.UserTask">
+  <insert id="insert" parameterType="com.suyu.api.domain.UserTask">
     insert into user_task (id, user_id, monday, 
       tuesday, wednesday, toursday, 
       friday, saturday, sonday
       )
-    values (#{id,jdbcType=INTEGER}, #{user_id,jdbcType=INTEGER}, #{monday,jdbcType=INTEGER}, 
-      #{tuesday,jdbcType=INTEGER}, #{wednesday,jdbcType=INTEGER}, #{toursday,jdbcType=INTEGER}, 
-      #{friday,jdbcType=INTEGER}, #{saturday,jdbcType=INTEGER}, #{sonday,jdbcType=INTEGER}
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{monday,jdbcType=DOUBLE}, 
+      #{tuesday,jdbcType=DOUBLE}, #{wednesday,jdbcType=DOUBLE}, #{toursday,jdbcType=DOUBLE}, 
+      #{friday,jdbcType=DOUBLE}, #{saturday,jdbcType=DOUBLE}, #{sonday,jdbcType=DOUBLE}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.alibaba.domain.UserTask">
+  <insert id="insertSelective" parameterType="com.suyu.api.domain.UserTask">
     insert into user_task
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
       </if>
-      <if test="user_id != null">
+      <if test="userId != null">
         user_id,
       </if>
       <if test="monday != null">
@@ -149,33 +149,33 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="user_id != null">
-        #{user_id,jdbcType=INTEGER},
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
       </if>
       <if test="monday != null">
-        #{monday,jdbcType=INTEGER},
+        #{monday,jdbcType=DOUBLE},
       </if>
       <if test="tuesday != null">
-        #{tuesday,jdbcType=INTEGER},
+        #{tuesday,jdbcType=DOUBLE},
       </if>
       <if test="wednesday != null">
-        #{wednesday,jdbcType=INTEGER},
+        #{wednesday,jdbcType=DOUBLE},
       </if>
       <if test="toursday != null">
-        #{toursday,jdbcType=INTEGER},
+        #{toursday,jdbcType=DOUBLE},
       </if>
       <if test="friday != null">
-        #{friday,jdbcType=INTEGER},
+        #{friday,jdbcType=DOUBLE},
       </if>
       <if test="saturday != null">
-        #{saturday,jdbcType=INTEGER},
+        #{saturday,jdbcType=DOUBLE},
       </if>
       <if test="sonday != null">
-        #{sonday,jdbcType=INTEGER},
+        #{sonday,jdbcType=DOUBLE},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.alibaba.domain.UserTaskExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.suyu.api.domain.UserTaskExample" resultType="java.lang.Long">
     select count(*) from user_task
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -187,29 +187,29 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.user_id != null">
-        user_id = #{record.user_id,jdbcType=INTEGER},
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
       </if>
       <if test="record.monday != null">
-        monday = #{record.monday,jdbcType=INTEGER},
+        monday = #{record.monday,jdbcType=DOUBLE},
       </if>
       <if test="record.tuesday != null">
-        tuesday = #{record.tuesday,jdbcType=INTEGER},
+        tuesday = #{record.tuesday,jdbcType=DOUBLE},
       </if>
       <if test="record.wednesday != null">
-        wednesday = #{record.wednesday,jdbcType=INTEGER},
+        wednesday = #{record.wednesday,jdbcType=DOUBLE},
       </if>
       <if test="record.toursday != null">
-        toursday = #{record.toursday,jdbcType=INTEGER},
+        toursday = #{record.toursday,jdbcType=DOUBLE},
       </if>
       <if test="record.friday != null">
-        friday = #{record.friday,jdbcType=INTEGER},
+        friday = #{record.friday,jdbcType=DOUBLE},
       </if>
       <if test="record.saturday != null">
-        saturday = #{record.saturday,jdbcType=INTEGER},
+        saturday = #{record.saturday,jdbcType=DOUBLE},
       </if>
       <if test="record.sonday != null">
-        sonday = #{record.sonday,jdbcType=INTEGER},
+        sonday = #{record.sonday,jdbcType=DOUBLE},
       </if>
     </set>
     <if test="_parameter != null">
@@ -219,62 +219,58 @@
   <update id="updateByExample" parameterType="map">
     update user_task
     set id = #{record.id,jdbcType=INTEGER},
-      user_id = #{record.user_id,jdbcType=INTEGER},
-      monday = #{record.monday,jdbcType=INTEGER},
-      tuesday = #{record.tuesday,jdbcType=INTEGER},
-      wednesday = #{record.wednesday,jdbcType=INTEGER},
-      toursday = #{record.toursday,jdbcType=INTEGER},
-      friday = #{record.friday,jdbcType=INTEGER},
-      saturday = #{record.saturday,jdbcType=INTEGER},
-      sonday = #{record.sonday,jdbcType=INTEGER}
+      user_id = #{record.userId,jdbcType=INTEGER},
+      monday = #{record.monday,jdbcType=DOUBLE},
+      tuesday = #{record.tuesday,jdbcType=DOUBLE},
+      wednesday = #{record.wednesday,jdbcType=DOUBLE},
+      toursday = #{record.toursday,jdbcType=DOUBLE},
+      friday = #{record.friday,jdbcType=DOUBLE},
+      saturday = #{record.saturday,jdbcType=DOUBLE},
+      sonday = #{record.sonday,jdbcType=DOUBLE}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.alibaba.domain.UserTask">
+  <update id="updateByPrimaryKeySelective" parameterType="com.suyu.api.domain.UserTask">
     update user_task
     <set>
-      <if test="user_id != null">
-        user_id = #{user_id,jdbcType=INTEGER},
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
       </if>
       <if test="monday != null">
-        monday = #{monday,jdbcType=INTEGER},
+        monday = #{monday,jdbcType=DOUBLE},
       </if>
       <if test="tuesday != null">
-        tuesday = #{tuesday,jdbcType=INTEGER},
+        tuesday = #{tuesday,jdbcType=DOUBLE},
       </if>
       <if test="wednesday != null">
-        wednesday = #{wednesday,jdbcType=INTEGER},
+        wednesday = #{wednesday,jdbcType=DOUBLE},
       </if>
       <if test="toursday != null">
-        toursday = #{toursday,jdbcType=INTEGER},
+        toursday = #{toursday,jdbcType=DOUBLE},
       </if>
       <if test="friday != null">
-        friday = #{friday,jdbcType=INTEGER},
+        friday = #{friday,jdbcType=DOUBLE},
       </if>
       <if test="saturday != null">
-        saturday = #{saturday,jdbcType=INTEGER},
+        saturday = #{saturday,jdbcType=DOUBLE},
       </if>
       <if test="sonday != null">
-        sonday = #{sonday,jdbcType=INTEGER},
+        sonday = #{sonday,jdbcType=DOUBLE},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.alibaba.domain.UserTask">
+  <update id="updateByPrimaryKey" parameterType="com.suyu.api.domain.UserTask">
     update user_task
-    set user_id = #{user_id,jdbcType=INTEGER},
-      monday = #{monday,jdbcType=INTEGER},
-      tuesday = #{tuesday,jdbcType=INTEGER},
-      wednesday = #{wednesday,jdbcType=INTEGER},
-      toursday = #{toursday,jdbcType=INTEGER},
-      friday = #{friday,jdbcType=INTEGER},
-      saturday = #{saturday,jdbcType=INTEGER},
-      sonday = #{sonday,jdbcType=INTEGER}
+    set user_id = #{userId,jdbcType=INTEGER},
+      monday = #{monday,jdbcType=DOUBLE},
+      tuesday = #{tuesday,jdbcType=DOUBLE},
+      wednesday = #{wednesday,jdbcType=DOUBLE},
+      toursday = #{toursday,jdbcType=DOUBLE},
+      friday = #{friday,jdbcType=DOUBLE},
+      saturday = #{saturday,jdbcType=DOUBLE},
+      sonday = #{sonday,jdbcType=DOUBLE}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select id="selectByDay" resultType="java.util.HashMap">
-    select user_id,${day}
-    from user_task
-  </select>
 </mapper>

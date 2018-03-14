@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/API2/API2.iml" filepath="$PROJECT_DIR$/API2/API2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/API/API.iml" filepath="$PROJECT_DIR$/API/API.iml" />
       <module fileurl="file://$PROJECT_DIR$/manage-life-of-student.iml" filepath="$PROJECT_DIR$/manage-life-of-student.iml" />
       <module fileurl="file://$PROJECT_DIR$/messageSend/messageSend.iml" filepath="$PROJECT_DIR$/messageSend/messageSend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootmail/springbootmail.iml" filepath="$PROJECT_DIR$/springbootmail/springbootmail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mail/springboot-mail.iml" filepath="$PROJECT_DIR$/springboot-mail/springboot-mail.iml" />
     </modules>
   </component>
 </project>

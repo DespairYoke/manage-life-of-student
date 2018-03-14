@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.alibaba.mapper.FileUpLoadMapper">
-  <resultMap id="BaseResultMap" type="com.alibaba.domain.FileUpLoad">
+<mapper namespace="com.suyu.api.mapper.FileUpLoadMapper">
+  <resultMap id="BaseResultMap" type="com.suyu.api.domain.FileUpLoad">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="url" jdbcType="VARCHAR" property="url" />
     <result column="userid" jdbcType="INTEGER" property="userid" />
-    <result column="title" jdbcType="VARCHAR" property="title"/>
+    <result column="title" jdbcType="VARCHAR" property="title" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,9 +66,9 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, url, userid,title
+    id, url, userid, title
   </sql>
-  <select id="selectByExample" parameterType="com.alibaba.domain.FileUpLoadExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.suyu.api.domain.FileUpLoadExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -93,19 +93,19 @@
     delete from file
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.alibaba.domain.FileUpLoadExample">
+  <delete id="deleteByExample" parameterType="com.suyu.api.domain.FileUpLoadExample">
     delete from file
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.alibaba.domain.FileUpLoad">
-    insert into file (id, url, userid
-      )
-    values (#{id,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, #{userid,jdbcType=INTEGER}
-      )
+  <insert id="insert" parameterType="com.suyu.api.domain.FileUpLoad">
+    insert into file (id, url, userid, 
+      title)
+    values (#{id,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, #{userid,jdbcType=INTEGER}, 
+      #{title,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.alibaba.domain.FileUpLoad">
+  <insert id="insertSelective" parameterType="com.suyu.api.domain.FileUpLoad">
     insert into file
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -136,7 +136,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.alibaba.domain.FileUpLoadExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.suyu.api.domain.FileUpLoadExample" resultType="java.lang.Long">
     select count(*) from file
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -154,8 +154,8 @@
       <if test="record.userid != null">
         userid = #{record.userid,jdbcType=INTEGER},
       </if>
-      <if test="title != null">
-        title = #{userid,jdbcType=VARCHAR},
+      <if test="record.title != null">
+        title = #{record.title,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -166,12 +166,13 @@
     update file
     set id = #{record.id,jdbcType=INTEGER},
       url = #{record.url,jdbcType=VARCHAR},
-      userid = #{record.userid,jdbcType=INTEGER}
+      userid = #{record.userid,jdbcType=INTEGER},
+      title = #{record.title,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.alibaba.domain.FileUpLoad">
+  <update id="updateByPrimaryKeySelective" parameterType="com.suyu.api.domain.FileUpLoad">
     update file
     <set>
       <if test="url != null">
@@ -180,13 +181,17 @@
       <if test="userid != null">
         userid = #{userid,jdbcType=INTEGER},
       </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.alibaba.domain.FileUpLoad">
+  <update id="updateByPrimaryKey" parameterType="com.suyu.api.domain.FileUpLoad">
     update file
     set url = #{url,jdbcType=VARCHAR},
-      userid = #{userid,jdbcType=INTEGER}
+      userid = #{userid,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

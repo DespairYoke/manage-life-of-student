@@ -3,7 +3,7 @@
 <generatorConfiguration>
 
     <classPathEntry
-            location="/Users/zwd-admin/.m2/repository/mysql/mysql-connector-java/5.1.43/mysql-connector-java-5.1.43.jar"/>
+            location="/Users/suyu/.m2/repository/mysql/mysql-connector-java/5.1.43/mysql-connector-java-5.1.43.jar"/>
 
     <context id="common-model" targetRuntime="MyBatis3">
 
@@ -12,10 +12,10 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
 
-        <jdbcConnection connectionURL="jdbc:mysql://115.29.32.62:3306/zwd"
+        <jdbcConnection connectionURL="jdbc:mysql://115.29.32.62:3306/ec2"
                         driverClass="com.mysql.jdbc.Driver" password="7d428bc667" userId="root" />
 
-        <javaModelGenerator targetPackage="com.alibaba.domain"
+        <javaModelGenerator targetPackage="com.suyu.api.domain"
                             targetProject="src/main/java" >
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -26,19 +26,20 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <!--<javaClientGenerator targetPackage="com.alibaba.mapper"-->
-                             <!--targetProject="src/main/java" type="XMLMAPPER" >-->
-            <!--<property name="enableSubPackages" value="true"/>-->
-        <!--</javaClientGenerator>-->
-
-        <table tableName="file" domainObjectName="FileUpLoad"
+        <javaClientGenerator targetPackage="com.suyu.api.mapper"
+                             targetProject="src/main/java" type="XMLMAPPER" >
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <table tableName="user" domainObjectName="User"
                enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
                enableSelectByExample="true"
                selectByExampleQueryId="true"
-        >
-            <property name="useActualColumnNames" value="true"/>
-        </table>
+        ></table>
     </context>
 </generatorConfiguration>
+
+
+
+

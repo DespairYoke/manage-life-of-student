@@ -1,58 +1,58 @@
 # manage-life-of-student
 
 ### 登录
-http:localhost:8080/api/index/login
+http:101.132.185.161:8085/api/index/login
 
     {
         "number":92 //学号
         "password":123456 //默认密码
     }
 ### 添加今日任务
-http:localhost:8080/api/task/addTodayTask
+http:101.132.185.161:8085/api/task/addTodayTask
 
     {
         "userid":95
         "content": //任务内容
     }
 ### 查询任务
-http:localhost:8080/api/task/queryTodayTask
+http:101.132.185.161:8085/api/task/queryTodayTask
 
     {
         "id":95  //用户id
     }
 ### 完成任务
-http:localhost:8080/api/task/finishTodayTask
+http:101.132.185.161:8085/api/task/finishTodayTask
 
     {
         "id": 1//任务的id
         "userid": 92 
     }
 ### 删除任务
-http:localhost:8080/api/task/deleteTodayTask
+http:101.132.185.161:8085/api/task/deleteTodayTask
 
     {
         "id": 1 //任务的id
     }
 ### 查看今日进度
-http:localhost:8080/api/task/queryCompletion
+http:101.132.185.161:8085/api/task/queryCompletion
 
     {
         "id": 95 //用户id
     }
 ### 查看本周完成率
-http:localhost:8080/api/week/queryWeekCompletion
+http:101.132.185.161:8085/api/week/queryWeekCompletion
 
     {
         user_id: 95
     }
 ### 查看好友今日进度
-http:localhost:8080/api/schedule/querySchedule
+http:101.132.185.161:8085/api/schedule/querySchedule
 
     {
         number: 92  //模糊查询
     }
 ### 更改个人信息
-http:localhost:8080/api/index/updateUser
+http:101.132.185.161:8085/api/index/updateUser
 
     {
         number: 92
@@ -61,53 +61,53 @@ http:localhost:8080/api/index/updateUser
         email:
     }
 ### 是否开启邮箱通知
-http:localhost:8080/api/index/updateUser
+http:101.132.185.161:8085/api/index/updateUser
 
     {
         number: 92
         type: 1//0表示不开启1表示开启
     }
 ### 查看账户信息
-http:localhost:8080/api/index/findUserInfo
+http:101.132.185.161:8085/api/index/findUserInfo
 
     {
         "id":92
     }
 ### 查看全部好友
-http:localhost:8080/api/index/findAllUser
+http:101.132.185.161:8085/api/index/findAllUser
 
     {
         无
     }
 ### 通过具体id查找
-http:localhost:8080/api/index/findUserInfo
+http:101.132.185.161:8085/api/index/findUserInfo
 
     {
         id:
     }
     
 ### 添加动态内容 
-http:localhost:8080/api/wall/add
+http:101.132.185.161:8085/api/wall/add
     
     {
         userid:
         content:
     }
 ###  查找动态内容   
-http:localhost:8080/api/wall/findAllWall
+http:101.132.185.161:8085/api/wall/findAllWall
 
     {
         //无
     }
 ### 生成短信验证码    
-localhost:8080/api/user/generCode
+101.132.185.161:8085/api/user/generCode
 
     {
         "phone":
     }
     
 ### 更新/绑定手机号
-localhost:8080/api/user/updatephone
+101.132.185.161:8085/api/user/updatephone
 
     {
         "id":,
@@ -116,7 +116,7 @@ localhost:8080/api/user/updatephone
     }
     
 ### 图片上传
-localhost:8080/api/upload/image
+101.132.185.161:8085/api/upload/image
 
     {
         "file":
@@ -124,15 +124,21 @@ localhost:8080/api/upload/image
     }
     
 ### 文件上传
-localhost:8080/api/upload/file
+101.132.185.161:8085/api/upload/file
 
     {
         "file":
         id:""
     }
+### 图片目录
+101.132.185.161:8085/api/upload/findimage
+
+    {
+        "id":
+    }
    
 #### 文件目录
-localhost:8080/api/upload/findfile
+101.132.185.161:8085/api/upload/findfile
 
     {
         "id":
