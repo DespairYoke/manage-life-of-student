@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0e811d64-5675-4480-99e2-6e3b43d45f4c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/API_war.xml" afterPath="" />
@@ -219,6 +220,9 @@
       <change beforePath="$PROJECT_DIR$/table.mwb" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+=======
+    <list default="true" id="fb6b7176-09cd-4202-9cea-4045ed674684" name="Default" comment="" />
+>>>>>>> 846464211a4522ba428244dd4f6899d0509f08f3
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/API/target/" />
     <ignored path="$PROJECT_DIR$/springboot-mail/target/" />
@@ -325,8 +329,13 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+            <state relative-caret-position="72">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+>>>>>>> 846464211a4522ba428244dd4f6899d0509f08f3
               <folding />
             </state>
           </provider>
@@ -451,11 +460,22 @@
       <select />
     </treeState>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="697" />
     <option name="y" value="74" />
     <option name="width" value="2208" />
     <option name="height" value="1289" />
+=======
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="421" />
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1337" />
+>>>>>>> 846464211a4522ba428244dd4f6899d0509f08f3
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -734,17 +754,61 @@
       <created>1520921764872</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1520921764872</updated>
       <workItem from="1520932840353" duration="867000" />
       <workItem from="1520939960292" duration="10172000" />
+=======
+      <updated>1516016289880</updated>
+      <workItem from="1516016291332" duration="409000" />
+      <workItem from="1516062737639" duration="1639000" />
+      <workItem from="1516064981764" duration="3605000" />
+      <workItem from="1516070381229" duration="18138000" />
+      <workItem from="1516153761778" duration="16850000" />
+      <workItem from="1516248716841" duration="11266000" />
+      <workItem from="1518071504701" duration="2146000" />
+      <workItem from="1518159275343" duration="596000" />
+      <workItem from="1519615707277" duration="10105000" />
+      <workItem from="1519692709431" duration="5563000" />
+      <workItem from="1519701641762" duration="4109000" />
+      <workItem from="1519713398079" duration="10056000" />
+      <workItem from="1519779812045" duration="13625000" />
+      <workItem from="1519867266206" duration="1498000" />
+      <workItem from="1520209259139" duration="3447000" />
+      <workItem from="1520297192820" duration="12591000" />
+      <workItem from="1520388577794" duration="16378000" />
+      <workItem from="1520509387249" duration="750000" />
+      <workItem from="1520575425850" duration="11955000" />
+      <workItem from="1520644876422" duration="15444000" />
+      <workItem from="1520670316798" duration="186000" />
+      <workItem from="1520670513404" duration="485000" />
+      <workItem from="1520813734076" duration="17340000" />
+      <workItem from="1520903591716" duration="12055000" />
+>>>>>>> 846464211a4522ba428244dd4f6899d0509f08f3
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="11039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="697" y="74" width="2208" height="1289" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="190713000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="421" y="23" width="2560" height="1337" extended-state="1" />
+>>>>>>> 846464211a4522ba428244dd4f6899d0509f08f3
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1206,7 +1270,11 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
+<<<<<<< HEAD
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+=======
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+>>>>>>> 846464211a4522ba428244dd4f6899d0509f08f3
           <folding />
         </state>
       </provider>
